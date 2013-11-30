@@ -1,0 +1,12 @@
+apply plugin: 'application'
+apply plugin: 'eclipse'
+ 
+mainClassName = 'org.ros.RosRun'
+
+dependencies {
+   compile 'org.ros.rosjava_core:rosjava:[0.1,)'
+
+  compile 'org.ros.rosjava_messages:sensor_msgs:[1.10,1.11)'
+
+  compile 'org.ros.rosjava_messages:geometry_msgs:[1.10,1.11)'
+}
